@@ -28,6 +28,16 @@ describe("when given all ones", () => {
   test("it returns account number 111111111", () => {
     expect(accountNumberParse(numberSet)).toBe("111111111")
   })
+
+  describe("when the top row of ones is truncated to an empty string", () => {
+    const numberSet =
+      `                           
+  |  |  |  |  |  |  |  |  |
+  |  |  |  |  |  |  |  |  |
+  
+`
+    expect(accountNumberParse(numberSet)).toBe("111111111")
+  })
 })
 
 describe("when given all numbers", () => {
