@@ -11,6 +11,7 @@ const zeroFixture =
 const zeroInput = [' _ ', '| |', '|_|']
 const oneInput = ['   ', '  |', '  |']
 const twoInput = [' _ ', ' _|', '|_ ']
+const threeInput = [' _ ', ' _|', ' _|']
 
 describe("when given no input", () => {
   test("it returns null", () => {
@@ -33,5 +34,11 @@ describe("when given a pattern that matches one", () => {
 describe("when given a pattern that matches two", () => {
   test("it returns string '2'", () =>{
     expect(pipeNumberParse(twoInput)).toBe('2')
+  })
+})
+
+describe("when given a pattern that matches three", () => {
+  test("it returns string '3'", () =>{
+    expect(pipeNumberParse(threeInput)).toBe('3')
   })
 })

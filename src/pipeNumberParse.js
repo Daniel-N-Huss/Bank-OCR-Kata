@@ -8,7 +8,11 @@ const pipeNumberParse = (pipeNumberPatterns) => {
     return "1"
   }
 
-  if (pipeNumberPatterns[1] === ' _|' ) {
+  if (pipeNumberPatterns[1] === ' _|' ) { //mid line match for 2 & 3
+    if (pipeNumberPatterns[2] === ' _|') { // bottom line match for 3
+      return "3"
+    }
+
     return "2"
   }
 
