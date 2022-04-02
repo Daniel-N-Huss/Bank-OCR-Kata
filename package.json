@@ -1,0 +1,10 @@
+{
+  "name": "bank_ocr",
+  "version": "1.0.0",
+  "description": "Code Kata for Test Double!",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel-N-Huss"
+}
