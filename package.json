@@ -6,5 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Daniel-N-Huss"
+  "author": "Daniel-N-Huss",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
 }
