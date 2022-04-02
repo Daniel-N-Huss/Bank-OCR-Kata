@@ -4,27 +4,31 @@ const pipeNumberParse = (pipeNumberPatterns) => {
     return null
   }
 
-  if (pipeNumberPatterns[0] === "   ") {
-    if (pipeNumberPatterns[1] === "|_|") {
-      return "4"
+  if (pipeNumberPatterns[0] === '   ') {
+    if (pipeNumberPatterns[1] === '|_|') {
+      return '4'
     }
 
-    return "1"
+    return '1'
   }
 
   if (pipeNumberPatterns[1] === ' _|' ) { //mid line match for 2 & 3
     if (pipeNumberPatterns[2] === ' _|') { // bottom line match for 3
-      return "3"
+      return '3'
     }
 
-    return "2"
+    return '2'
   }
 
   if (pipeNumberPatterns[1] === '|_ ') {
+    if (pipeNumberPatterns[2] === "|_|"){
+      return '6'
+    }
+
     return '5'
   }
 
-    return "0"
+    return '0'
 }
 
 module.exports = pipeNumberParse
