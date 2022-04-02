@@ -8,6 +8,8 @@ const zeroFixture =
 `
 // => 000000000`
 
+const zeroInput = [' _ ', '| |', '|_|']
+
 
 describe("when given no input", () => {
   test("it returns null", () => {
@@ -15,8 +17,8 @@ describe("when given no input", () => {
   })
 })
 
-describe("when given a single example set of all zero characters", () => {
-  test("it returns an account number of all 0's", () =>{
-    expect(pipeNumberParse(zeroFixture)).toBe('000000000')
+describe("when given a pattern that matches zero", () => {
+  test("it returns string '0'", () =>{
+    expect(pipeNumberParse(zeroInput)).toBe('0')
   })
 })
