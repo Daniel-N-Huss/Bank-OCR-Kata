@@ -9,7 +9,7 @@ const zeroFixture =
 // => 000000000`
 
 const zeroInput = [' _ ', '| |', '|_|']
-
+const oneInput = ['   ', '  |', '  |']
 
 describe("when given no input", () => {
   test("it returns null", () => {
@@ -20,5 +20,11 @@ describe("when given no input", () => {
 describe("when given a pattern that matches zero", () => {
   test("it returns string '0'", () =>{
     expect(pipeNumberParse(zeroInput)).toBe('0')
+  })
+})
+
+describe("when given a pattern that matches one", () => {
+  test("it returns string '1'", () =>{
+    expect(pipeNumberParse(oneInput)).toBe('1')
   })
 })

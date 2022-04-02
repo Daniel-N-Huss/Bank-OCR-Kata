@@ -1,10 +1,14 @@
 
-const pipeNumberParse = (pipeNumber) => {
-  if (!pipeNumber) {
+const pipeNumberParse = (pipeNumberPatterns) => {
+  if (!pipeNumberPatterns) {
     return null
   }
 
-  return "0"
+  if (pipeNumberPatterns[0] === "   ") {
+    return "1"
+  }
+
+    return "0"
 }
 
 module.exports = pipeNumberParse
