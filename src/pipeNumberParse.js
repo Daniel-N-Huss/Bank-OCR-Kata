@@ -20,12 +20,16 @@ const pipeNumberParse = (pipeNumberPatterns) => {
     return '2'
   }
 
-  if (pipeNumberPatterns[1] === '|_ ') {
-    if (pipeNumberPatterns[2] === "|_|"){
+  if (pipeNumberPatterns[1] === '|_ ') { //mid match for 5 & 6
+    if (pipeNumberPatterns[2] === "|_|"){ //bottom match for 6
       return '6'
     }
 
     return '5'
+  }
+
+  if (pipeNumberPatterns[1] === "  |") {
+    return '7'
   }
 
     return '0'
