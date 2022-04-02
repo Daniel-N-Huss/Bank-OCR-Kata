@@ -1,9 +1,9 @@
-const pipeNumberParse = require("./src/pipeNumberParse")
+const pipeNumberParse = require("../src/pipeNumberParse")
 
 
 describe("when given no input", () => {
 
   test("it returns null", () => {
-    expect(pipeNumberParse().toBe(null))
+    expect(pipeNumberParse()).toBe(null)
   })
 })
