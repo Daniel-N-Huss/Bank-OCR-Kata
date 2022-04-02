@@ -1,13 +1,5 @@
 const pipeNumberParse = require("../src/pipeNumberParse")
 
-const zeroFixture =
-` _  _  _  _  _  _  _  _  _ 
-| || || || || || || || || |
-|_||_||_||_||_||_||_||_||_|
-
-`
-// => 000000000`
-
 const zeroInput = [' _ ', '| |', '|_|']
 const oneInput = ['   ', '  |', '  |']
 const twoInput = [' _ ', ' _|', '|_ ']
