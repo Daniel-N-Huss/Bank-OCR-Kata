@@ -1,5 +1,9 @@
 
-const validateAccountNumber = () => {
+const validateAccountNumber = (accountNumber) => {
+  if (accountNumber) {
+    return true
+  }
+
   return false
 }
 
