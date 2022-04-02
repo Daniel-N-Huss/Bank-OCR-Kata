@@ -16,6 +16,7 @@ const fourInput = ['   ', '|_|', '  |']
 const fiveInput = [' _ ', '|_ ', ' _|']
 const sixInput = [' _ ', '|_ ', '|_|']
 const sevenInput = [' _ ', '  |', '  |']
+const eightInput = [' _ ', '|_|', '|_|']
 
 describe("when given no input", () => {
   test("it returns null", () => {
@@ -68,5 +69,11 @@ describe("when given a pattern that matches six", () => {
 describe("when given a pattern that matches seven", () => {
   test("it returns string '7'", () =>{
     expect(pipeNumberParse(sevenInput)).toBe('7')
+  })
+})
+
+describe("when given a pattern that matches eight", () => {
+  test("it returns string '8'", () =>{
+    expect(pipeNumberParse(eightInput)).toBe('8')
   })
 })
