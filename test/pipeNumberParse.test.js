@@ -13,6 +13,7 @@ const oneInput = ['   ', '  |', '  |']
 const twoInput = [' _ ', ' _|', '|_ ']
 const threeInput = [' _ ', ' _|', ' _|']
 const fourInput = ['   ', '|_|', '  |']
+const fiveInput = [' _ ', '|_ ', ' _|']
 
 describe("when given no input", () => {
   test("it returns null", () => {
@@ -47,5 +48,11 @@ describe("when given a pattern that matches three", () => {
 describe("when given a pattern that matches four", () => {
   test("it returns string '4'", () =>{
     expect(pipeNumberParse(fourInput)).toBe('4')
+  })
+})
+
+describe("when given a pattern that matches five", () => {
+  test("it returns string '5'", () =>{
+    expect(pipeNumberParse(fiveInput)).toBe('5')
   })
 })

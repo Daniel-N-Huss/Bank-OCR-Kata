@@ -20,6 +20,10 @@ const pipeNumberParse = (pipeNumberPatterns) => {
     return "2"
   }
 
+  if (pipeNumberPatterns[1] === '|_ ') {
+    return '5'
+  }
+
     return "0"
 }
 
