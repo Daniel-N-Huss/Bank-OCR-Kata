@@ -33,6 +33,9 @@ const pipeNumberParse = (pipeNumberPatterns) => {
   }
 
   if (pipeNumberPatterns[1] === "|_|") {
+    if (pipeNumberPatterns[2] === " _|") {
+      return '9'
+    }
     return '8'
   }
 
